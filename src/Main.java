@@ -13,8 +13,8 @@ public class Main {
         Person parsa = new Person("parsa" , "5");
 
         Student Ali = new Student(ali.id , 1398 , math.majorId);
-        Student Arya = new Student(arya.id , 1399 , math.majorId);
-        Student Parsa = new Student(parsa.id , 1400 , chemistry.majorId);
+        Student Arya = new Student(arya.id , 1398 , math.majorId);
+        Student Parsa = new Student(parsa.id , 1398 , chemistry.majorId);
 
         System.out.println(ali.name + " " + Ali.studentCode);
         System.out.println(arya.name + " " + Arya.studentCode);
