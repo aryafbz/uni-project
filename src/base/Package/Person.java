@@ -1,4 +1,4 @@
-package uni.packages;
+package base.Package;
 
 import java.util.ArrayList;
 
@@ -15,13 +15,13 @@ public class Person {
         id = personList.size();
     }
 
-    public static void findByld(int id) {
-        for (int i = personList.size(); i >= 0; i--) {
-            if (i == id) {
-                System.out.println("name: " + personList.get(i - 1).name);
-                System.out.println("nationalId: " + personList.get(i - 1).NATIONALID);
-            }
+    public static Person findById(int id) {
+        for (int i = personList.size() - 1; i >= 0; i--)
+        {
+            if(personList.get(i).id == id)
+                return personList.get(i);
         }
+        return null;
     }
 
 }
